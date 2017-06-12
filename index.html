@@ -20,6 +20,33 @@
                 </header>
                 <div class="left">
                     <p class="top">Revenue per week</p>
+                    <div id="infoBoxes1">
+                    <div class="box0">
+                        <p class="orange">550 $</p>
+                        <p class="green">400 $</p>
+                        <p class="blue">255 $</p>
+                    </div>
+                    <div class="box1">
+                        <p class="orange">700 $</p>
+                        <p class="green">390 $</p>
+                        <p class="blue">110 $</p>
+                    </div>
+                    <div class="box2">
+                        <p class="orange">850 $</p>
+                        <p class="green">600 $</p>
+                        <p class="blue">300 $</p>
+                    </div>
+                    <div class="box3">
+                        <p class="orange">900 $</p>
+                        <p class="green">750 $</p>
+                        <p class="blue">280 $</p>
+                    </div>
+                    <div class="box4">
+                        <p class="orange">260 $</p>
+                        <p class="green">150 $</p>
+                        <p class="blue">50 $</p>
+                    </div>
+                    </div>
                     <svg>
                         <!--linie szare-->
   
@@ -113,7 +140,7 @@
                     <small>Revenue stream</small>
                     </p>
                     <div class="btn">
-                        <button>Revenue Analysis</button>
+                        <button id="btnOne">Revenue Analysis</button>
                     </div>
                 </div>
             </section>
@@ -132,6 +159,33 @@
                 </header>
                 <div class="left">
                     <p class="top">Installations per day</p>
+                    <div id="infoBoxes2">
+                    <div class="box5">
+                        <p class="orange">6</p>
+                        <p class="green">4</p>
+                        <p class="blue">3</p>
+                    </div>
+                    <div class="box6">
+                        <p class="orange">6.5</p>
+                        <p class="green">2.8</p>
+                        <p class="blue">0.7</p>
+                    </div>
+                    <div class="box7">
+                        <p class="orange">7</p>
+                        <p class="green">5</p>
+                        <p class="blue">2.8</p>
+                    </div>
+                    <div class="box8">
+                        <p class="orange">8.8</p>
+                        <p class="green">7</p>
+                        <p class="blue">2.8</p>
+                    </div>
+                    <div class="box9">
+                        <p class="orange">2.8</p>
+                        <p class="green">1.8</p>
+                        <p class="blue">0.7</p>
+                    </div>
+                    </div>
                     <svg>
                       <!--linie szare-->
 	  <line x1="25" y1="150" x2="380" y2="150" stroke="lightgrey"stroke-width="0.7" /> <!--pozioma dolna-->
@@ -184,10 +238,32 @@
                     <small>Installations</small>
                     </p>
                      <div class="btn">
-                        <button>View Installations</button>
+                        <button id="btnTwo">View Installations</button>
                     </div>
                 </div>
             </section>
         </div> <!--end of wrapper-->
+        <script>
+             function toggle() {
+                 var boxes = document.getElementById("infoBoxes1");
+                  if(boxes.style.visibility == "hidden") {
+                      boxes.style.visibility = "visible";
+                  }else {
+                      boxes.style.visibility = "hidden";
+                  }
+             }
+             function toggle2() {
+                 var boxes2 = document.getElementById("infoBoxes2");
+                 if(boxes2.style.visibility == "hidden") {
+                     boxes2.style.visibility = "visible";
+                 }else {
+                     boxes2.style.visibility = "hidden";
+                 }
+             }
+             window.onload = function(){
+                document.getElementById("btnOne").onclick = toggle;
+                document.getElementById("btnTwo").onclick = toggle2; 
+            }      
+        </script>
     </body>
 </html>
