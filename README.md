@@ -9,6 +9,6 @@ There's no RWD done because I worked with SVG for the first time and there wasn'
 
 I need to think which is the best way to make it responsive without having to construct the graph again.
 
-https://ewa2310.github.io/Dashboard/
+https://evva2310.github.io/Dashboard/
 
 
